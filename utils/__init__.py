@@ -18,9 +18,9 @@ def get_predictor(file_hash) -> str:
     """
     _create_pl()
     with open(PL) as file:
-        rows = csv.DictReader(file, delimiter=DELIMITER, quotechar='"')
+        rows = csv.DictReader(file, delimiter=DELIMITER)
         for row in rows:
-            if file_hash in row[HASH] and is_file_present(row[HASH]):
+            if file_hash in row[HASH] and is_file_present(CLASSPATH + os.path.sep + row[HASH]):
                 return CLASSPATH + os.path.sep + row[PREDICTOR_FILE]
             else:
                 raise FileNotFoundError('Predictor not present.')
