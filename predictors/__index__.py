@@ -1,8 +1,7 @@
 from pathlib import Path
-import os
 from io import IOBase
 
-PATH = str(Path(__file__).parents[0])
+PATH = Path(__file__).parents[0]
 
 
 def get_predictor_path(filename: str) -> Path:

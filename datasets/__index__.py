@@ -2,7 +2,7 @@ from pathlib import Path
 from io import IOBase
 
 
-PATH = str(Path(__file__).parents[0])
+PATH = Path(__file__).parents[0]
 
 
 def get_dataset_path(filename: str) -> Path:

@@ -1,3 +1,3 @@
 from pathlib import Path
 
-PATH = str(Path(__file__).parents[0])
+PATH = Path(__file__).parents[0]

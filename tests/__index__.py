@@ -4,7 +4,7 @@ from typing import Iterable, Dict
 import csv
 
 
-PATH = str(Path(__file__).parents[0])
+PATH = Path(__file__).parents[0]
 
 
 def get_test_path(filename: str) -> Path:
