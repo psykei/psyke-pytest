@@ -1,4 +1,4 @@
-from resources import PL, CLASSPATH, DELIMITER, is_file_present, HASH, PREDICTOR_FILE
+from pytest.resources import PL, CLASSPATH, DELIMITER, is_file_present, HASH, PREDICTOR_FILE
 import csv
 import os
 
@@ -33,9 +33,9 @@ def update_library(predictor_file):
     :param predictor_file: the predictor's file name
     """
     _create_pl()
-    with open(CLASSPATH + os.path.sep + predictor_file) as file:
+    with open(CLASSPATH + os.path.sep + predictor_file, 'rb') as file:
         file_content = file.read()
-    file_hash = hash(file_content)
+    file_hash = str(hash(file_content))
 
     with open(PL, 'a') as file:
-        file.write(file_hash + DELIMITER + predictor_file)
+        file.write('\n' + file_hash + DELIMITER + predictor_file)
