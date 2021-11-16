@@ -18,4 +18,4 @@ def open_test(filename: str) -> TextIO:
 
 def test_cases(filename: str) -> Iterable[Dict]:
     with open_test(filename) as file:
-        yield csv.DictReader(file, delimiter=';', quotechar='"')
+        return [row for row in csv.DictReader(file, delimiter=';', quotechar='"')]
