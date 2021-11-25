@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from psyke.schema.discrete_feature import DiscreteFeature
+from psyke import DiscreteFeature
 from test.resources.schemas.iris import iris_features
 
 PATH = Path(__file__).parents[0]

@@ -1,6 +1,5 @@
-from psyke.schema.discrete_feature import DiscreteFeature
-from psyke.schema.value import LessThan, Between, GreaterThan
-
+from psyke import DiscreteFeature
+from psyke.schema import LessThan, GreaterThan, Between
 
 iris_features = {
     DiscreteFeature(
