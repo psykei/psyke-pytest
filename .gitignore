@@ -5,6 +5,9 @@ VERSION
 .idea/
 .vscode/
 
+datasets/datasets
+datasets/models
+
 *~
 *.jar
 
