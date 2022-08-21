@@ -2,3 +2,4 @@ model;model_options;dataset;bins
 RFR;{};house;
 KNNC;{'n_neighbors': 9};iris;3.0
 KNNC;{'n_neighbors': 3};iris;3.0
+NN;{};iris;
