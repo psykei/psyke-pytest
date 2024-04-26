@@ -1,3 +1,3 @@
 dataset;predictor;extractor_type;extractor_params;theory
-iris;DTC;ITER;"{'min_update': 0.05, 'threshold': 0.1, 'n_points': 1, 'min_examples': 500}";"iris(PetalLength_988, PetalWidth_988, SepalLength_988, SepalWidth_988, setosa) :- '=<'(PetalLength_988, 2.440001). iris(PetalLength_989, PetalWidth_989, SepalLength_989, SepalWidth_989, versicolor) :- '>'(PetalLength_989, 2.440001)"
+iris;DTC;ITER;"{'min_update': 0.05, 'threshold': 0.1, 'n_points': 1, 'min_examples': 500}";"iris(PetalLength, PetalWidth, SepalLength, SepalWidth, setosa) :- '=<'(PetalLength, 2.440001). iris(PetalLength, PetalWidth, SepalLength, SepalWidth, versicolor) :- in(PetalLength, [2.440001, 5.240003]). iris(PetalLength, PetalWidth, SepalLength, SepalWidth, virginica) :- '>'(PetalLength, 5.240003)"
 house;houseRFR;ITER;"{'min_update': 0.2, 'threshold': 1, 'min_examples': 1}";"'MedHouseVal'(AveBedrms, AveOccup, AveRooms, HouseAge, Latitude, Longitude, MedInc, Population, 0.367835) :- true"
